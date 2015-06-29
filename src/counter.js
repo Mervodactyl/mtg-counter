@@ -9,3 +9,11 @@ Counter.prototype.addLife = function(lifeTokens) {
     this.lifeLevel += lifeTokens;
   }
 };
+
+Counter.prototype.decreaseLife = function(lifeTokens) {
+  if (this.lifeLevel - lifeTokens <= 0) {
+    this.lifeLevel = 0;
+  } else {
+    this.lifeLevel -= lifeTokens;
+  }
+};

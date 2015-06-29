@@ -13,6 +13,11 @@ describe("Counter", function() {
       expect(counter.lifeLevel).toEqual(999);
     });
 
+    it("has a Life Level Minimum of '0'", function() {
+      var counter = new Counter();
+      counter.decreaseLife(21);
+      expect(counter.lifeLevel).toEqual(0);
+    });
   });
 
 });
