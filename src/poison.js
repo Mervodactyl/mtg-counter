@@ -5,6 +5,7 @@ var Poison = function() {
 Poison.prototype.increaseToxicity = function(poisonCounters) {
   if (this.toxicityLevel + poisonCounters >= 10) {
     this.toxicityLevel = 10;
+    return "TEN TIMES YOU HAVE BEEN REPEATEDLY AND MALICIOUSLY POISIONED, YOU MUST NOW EMBRACE THE SWEET ARMS OF DEATH";
   } else {
     this.toxicityLevel += poisonCounters;
   }
