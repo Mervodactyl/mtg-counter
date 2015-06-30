@@ -23,13 +23,18 @@ describe("Counter", function() {
 
   describe("will return the following Message if", function() {
     it("Player's Life Level reaches below '1'", function() {
-      expect(counter.decreaseLife(20)).toEqual("YOU ARE DEAD, YOUR OPPONENT WILL FEAST FROM THE MARROW IN YOUR BONES AND DANCE UPON YOUR GRAVES");
+      expect(counter.decreaseLife(20)).toEqual("YOU ARE DEAD, YOUR OPPONENT WILL FEAST FROM THE MARROW IN YOUR BONES AND DANCE UPON YOUR GRAVE");
     });
 
     it("Player's Life Level tries to go over '999'", function() {
-      expect(counter.addLife(979)).toEqual("NICE TRY....NO ONE LIVES THAT LONG IN MAGIC...CONSIDER YOURSELF THRICE CURSED FOR BEHAVIOUR UNBECOMING!!!!");
+      expect(counter.addLife(979)).toEqual("NICE TRY....NO ONE LIVES THAT LONG IN THE MULTIVERSE...CONSIDER YOURSELF THRICE CURSED FOR BEHAVIOUR UNBECOMING!!!!");
     });
 
+    describe("has a Dice Throw option", function() {
+      xit("which will generate a random number between 1 - 20", function() {
+
+      });
+    });
 
   });
 
