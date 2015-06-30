@@ -17,3 +17,7 @@ Dice.prototype.increaseDice = function(higherDieNumber) {
     this.dieFace += higherDieNumber;
   }
 };
+
+Dice.prototype.rollDice = function() {
+  this.dieFace = 1 + Math.floor(Math.random() * 20);
+};

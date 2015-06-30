@@ -35,9 +35,10 @@ describe("Dice", function() {
   });
 
   describe("Main Purpose is to ", function() {
-    xit("generate a random Number from the Player's throw", function() {
+    it("generate a random Number from the Player's throw", function() {
       dice.rollDice();
-      expect();
+      expect(dice.dieFace).toBeGreaterThan(0);
+      expect(dice.dieFace).toBeLessThan(21);
     });
   });
 

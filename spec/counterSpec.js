@@ -29,14 +29,5 @@ describe("Counter", function() {
     it("Player's Life Level tries to go over '999'", function() {
       expect(counter.addLife(979)).toEqual("NICE TRY....NO ONE LIVES THAT LONG IN THE MULTIVERSE...CONSIDER YOURSELF THRICE CURSED FOR BEHAVIOUR UNBECOMING!!!!");
     });
-
-    describe("has a Dice Throw option", function() {
-      xit("which will generate a random number between 1 - 20", function() {
-
-      });
-    });
-
   });
-
-
 });
