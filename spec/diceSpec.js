@@ -5,6 +5,14 @@ describe("Dice", function() {
       dice = new Dice();
     });
 
+  describe("main Purpose is to ", function() {
+    it("generate a random Number between '1-20', ie from its face value", function() {
+      dice.rollDice();
+      expect(dice.dieFace).toBeGreaterThan(0);
+      expect(dice.dieFace).toBeLessThan(21);
+    });
+  });
+
   describe("should ", function() {
     it("start at '20'", function() {
       expect(dice.dieFace).toEqual(20);
@@ -33,13 +41,4 @@ describe("Dice", function() {
       expect(dice.dieFace).toEqual(16);
     });
   });
-
-  describe("Main Purpose is to ", function() {
-    it("generate a random Number from the Player's throw", function() {
-      dice.rollDice();
-      expect(dice.dieFace).toBeGreaterThan(0);
-      expect(dice.dieFace).toBeLessThan(21);
-    });
-  });
-
 });
