@@ -7,6 +7,8 @@ var Game = function() {
 Game.prototype.addPlayer = function(createInstanceOfPlayer) {
   if (this.numberOfPlayers + createInstanceOfPlayer > this.MAXIMUMPLAYERS) {
     this.numberOfPlayers = this.MAXIMUMPLAYERS;
+  } else if (this.numberOfPlayers + createInstanceOfPlayer === 0) {
+    throw new Error ("YOU MUST HAVE AT LEAST ONE PLAYER");
   } else {
     this.numberOfPlayers += createInstanceOfPlayer;
   }
