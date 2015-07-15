@@ -8,5 +8,11 @@ describe("Player", function() {
     });
   });
 
+  xdescribe("will have an instance of ", function() {
+    it("a Counter", function() {
+      var player = new Player();
+    });
+  });
+
 
 });

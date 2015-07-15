@@ -10,7 +10,7 @@ describe("Counter", function() {
       expect(counter.lifeLevel).toEqual(20);
     });
 
-    it("has a Life Level Limit of '999'", function() {
+    it("has a Life Level Limit  of '999'", function() {
       counter.addLife(980);
       expect(counter.lifeLevel).toEqual(999);
     });
