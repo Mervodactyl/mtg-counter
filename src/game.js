@@ -1,7 +1,18 @@
-var Game = function() {
+var Game = function(players) {
   this.numberOfPlayers = 0;
   this.MAXIMUMPLAYERS = 4;
   this.MINIMUMPLAYERS = 1;
+  this.players = players;
+};
+
+Game.prototype.addLife = function(playerName) {
+  console.log(this.players);
+  this.players[playerName].addLife();
+};
+
+Game.prototype.decreaseLife = function(playerName) {
+  console.log(this.players);
+  this.players[playerName].decreaseLife();
 };
 
 Game.prototype.addPlayer = function(createInstanceOfPlayer) {
